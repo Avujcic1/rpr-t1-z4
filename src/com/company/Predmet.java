@@ -4,7 +4,7 @@ package com.company;
 public class Predmet {
     private Student[] NizStudenata=null;
     private String ImePredmeta;
-    private int SifraPredmeta, BrojStudenata;
+    private int SifraPredmeta, BrojStudenata = 0;
     private final int MAX_BROJ_STUDENATA;
 
     public Predmet(String imePredmeta,int sifraPredmeta, int maxBroj){
@@ -41,6 +41,8 @@ public class Predmet {
         NizStudenata[BrojStudenata++] = s;
     }
 
+
+
     public void ispisi(Student s){
         for(int i = 0; i < BrojStudenata; i++){
             if(s.equals(NizStudenata[i])){
@@ -58,4 +60,7 @@ public class Predmet {
         }
     }
 
+    public int getBrojStudenata() {
+        return BrojStudenata;
+    }
 }

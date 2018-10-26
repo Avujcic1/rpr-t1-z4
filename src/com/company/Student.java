@@ -26,7 +26,7 @@ public class Student {
         this.Ime = Ime;
     }
 
-    public void SetName(String Prezime) {
+    public void SetPrezime(String Prezime) {
         this.Prezime = Prezime;
     }
 
