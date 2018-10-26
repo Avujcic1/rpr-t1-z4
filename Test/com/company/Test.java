@@ -12,7 +12,7 @@ public class Test {
     }
 
     @org.junit.jupiter.api.Test
-    void ispisiStudentaTest1() throws IllegalAccessException {
+    void ispisiStudentaTest1() throws Exception {
         Student student = new Student("Meho","Mehic",12345);
         Predmet predmet = new Predmet("RPR",102,2);
         predmet.upisi(student);
