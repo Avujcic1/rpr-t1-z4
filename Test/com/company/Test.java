@@ -25,7 +25,7 @@ public class Test {
         Student student = new Student("Meho","Mehic",12345);
         Predmet predmet = new Predmet("RPR",102,2);
 
-        assertThrows(IllegalAccessException.class,() -> {predmet.ispisiStudente(student);});
+        assertThrows(IllegalAccessException.class,() -> {predmet.ispisiStudente();});
     }
 
     @org.junit.jupiter.api.Test
